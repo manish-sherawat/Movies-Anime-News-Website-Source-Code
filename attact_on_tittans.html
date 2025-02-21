@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack on Titan - Dive into Season 4 & Beyond</title>
+    <link rel="stylesheet" href="detail_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Entertainment Hub</a>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search Attack on Titan...">
+            <button id="searchButton">Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Web Series</a></li>
+                <li><a href="#">Movies</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <label class="theme-switch">
+                <input type="checkbox" id="theme-checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="center-container">
+            <img src="https://m.media-amazon.com/images/M/MV5BZTAyMjUxYWItYTBkNS00YmNlLWEzNmItMDQ0MTRlYzQwNzIyXkEyXkFqcGc@._V1_.jpg"
+                alt="Attack on Titan Poster">
+            <article class="fade-in visible">
+                <h1>Attack on Titan: A Deep Dive into Season 4 and the Series' Phenomenon</h1>
+
+                <p>Attack on Titan has captivated audiences worldwide with its intense storytelling, complex characters, and stunning animation. Created by Hajime Isayama, the series has become a cultural phenomenon. As we reflect on the final season, let's delve into the details that make Attack on Titan a masterpiece.</p>
+
+                <h2>Season 4: The Final Chapter</h2>
+
+                <p>The final season of Attack on Titan concluded in 2023, delivering an epic conclusion to the series. It brought together all the major storylines and character arcs, providing a satisfying end to this epic saga.</p>
+
+                <h3>Key Characters</h3>
+
+                <p>Season 4 focused on the development of its main characters, each playing a crucial role in the final battles:</p>
+
+                <ul>
+                    <li><strong>Eren Yeager:</strong> The protagonist whose journey from a vengeful soldier to a complex anti-hero is central to the series.
+                        <ul>
+                            <li><em>Role:</em> Leader of the Yeagerists and the driving force behind the Rumbling.</li>
+                            <li><em>Abilities:</em> Titan shifting, strategic intellect, and immense willpower.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Mikasa Ackerman:</strong> Eren's adoptive sister and one of the strongest soldiers in the Survey Corps.
+                        <ul>
+                            <li><em>Role:</em> Protector of Eren and key fighter in the final battles.</li>
+                            <li><em>Abilities:</em> Exceptional combat skills, Ackerman strength, and unwavering loyalty.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Armin Arlert:</strong> The strategic genius of the group, known for his intelligence and compassion.
+                        <ul>
+                            <li><em>Role:</em> Tactical leader and the Colossal Titan.</li>
+                            <li><em>Abilities:</em> Strategic planning, Titan shifting, and diplomatic skills.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Production Quality</h3>
+
+                <p>The final season showcased the highest production quality, with:</p>
+
+                <ul>
+                    <li><strong>Enhanced Animation:</strong> Improved character movements and more detailed backgrounds.</li>
+                    <li><strong>Epic Soundtrack:</strong> A powerful score that heightened the emotional impact of key scenes.</li>
+                    <li><strong>Detailed Character Designs:</strong> More expressive and detailed character models.</li>
+                </ul>
+
+                <h3>Major Story Arcs</h3>
+
+                <p>Season 4 covered several crucial story arcs:</p>
+
+                <ul>
+                    <li><strong>The Marley Arc:</strong> Introduced the Marleyan perspective and set the stage for the final conflict.</li>
+                    <li><strong>The Rumbling Arc:</strong> The climactic battle where Eren unleashes the full power of the Founding Titan.</li>
+                    <li><strong>The Final Battle Arc:</strong> The ultimate confrontation between Eren and his former allies.</li>
+                </ul>
+
+                <h3>Fan Reactions</h3>
+
+                <p>Fans praised the final season for its:</p>
+
+                <ul>
+                    <li><strong>Emotional Depth:</strong> The series' ability to explore complex themes and character motivations.</li>
+                    <li><strong>Action Sequences:</strong> Intense and well-choreographed battles.</li>
+                    <li><strong>Faithful Adaptation:</strong> Staying true to the manga while enhancing the story through animation.</li>
+                </ul>
+
+                <h3>Viewership Data</h3>
+                <p>Here's a visual representation of the show's viewership growth after its initial release. This data is dynamically updated.</p>
+
+                <div id="viewership-graph">
+                    <!-- Placeholder for graph generated by JavaScript -->
+                    <p>Graph will appear here</p>
+                </div>
+
+                <p>Attack on Titan has left an indelible mark on the anime world, and its legacy will continue to inspire future generations of creators and fans alike.</p>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Entertainment Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const themeCheckbox = document.getElementById('theme-checkbox');
+
+            // Function to set the theme
+            function setTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+            }
+
+            // Function to toggle the theme
+            function toggleTheme() {
+                const currentTheme = localStorage.getItem('theme') || 'light';
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                setTheme(newTheme);
+            }
+
+            // Add event listener to the theme checkbox
+            themeCheckbox.addEventListener('change', toggleTheme);
+
+            // Check local storage for saved theme
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            setTheme(savedTheme);
+
+            // Set initial state of the checkbox based on the saved theme
+            themeCheckbox.checked = savedTheme === 'dark';
+        });
+
+        // Sample viewership data (replace with actual data)
+        const viewershipData = [
+            { week: 1, viewers: 1000000 },
+            { week: 2, viewers: 1500000 },
+            { week: 3, viewers: 2000000 },
+            { week: 4, viewers: 2500000 },
+            { week: 5, viewers: 3000000 }
+        ];
+
+        // Function to generate a simple text-based graph
+        function generateGraph(data) {
+            const graphContainer = document.getElementById('viewership-graph');
+            if (!graphContainer) return;
+
+            let graphHTML = '<div>';
+            const maxViewers = Math.max(...data.map(item => item.viewers));
+            const barScale = 50 / maxViewers; // Scale bars to fit container
+
+            data.forEach(item => {
+                const barHeight = item.viewers * barScale;
+                graphHTML += `<div style="width: ${barHeight}px; background-color: #3182ce; color: white; margin-bottom: 5px; text-align: right; padding-right: 5px;">
+                                Week ${item.week}: ${item.viewers}
+                            </div>`;
+            });
+
+            graphHTML += '</div>';
+            graphContainer.innerHTML = graphHTML;
+        }
+
+        // Generate the graph on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            generateGraph(viewershipData);
+        });
+    </script>
+</body>
+
+</html>
