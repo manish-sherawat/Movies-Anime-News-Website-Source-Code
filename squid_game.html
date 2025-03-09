@@ -124,4 +124,13 @@
 
             // Add event listener to the theme checkbox
             themeCheckbox.addEventListener('change', toggleTheme);
+            // Check local storage for saved theme
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            setTheme(savedTheme);
 
+            // Set initial state of the checkbox based on the saved theme
+            themeCheckbox.checked = savedTheme === 'dark';
+        });
+    </script>
+</body>
+</html>
